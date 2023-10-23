@@ -31,13 +31,13 @@
                 </form>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <button type="button" class="btn position-relative">
+                        <button type="button" class="btn position-relative" routerLink="/user">
                             <i class="fa fa-user fa-lg"></i>
                             <span class="position-aboslute top-0 translate-middle badge bg-primary">5</span>
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn position-relative">
+                        <button type="button" class="btn position-relative" routerLink="/cart" *ngIf="getUser()==='customer'">
                             <i class="fa fa-shopping-cart fa-lg"></i>
                             <span class="position-aboslute top-0 translate-middle badge bg-primary">2</span>
                         </button>

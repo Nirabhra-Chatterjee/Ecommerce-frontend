@@ -11,10 +11,14 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 export class ProductsComponent {
 
   cart=faShoppingCart;
+  user='customer';
 
   constructor(private router:Router){}
   onLogin(){
     this.router.navigate(['login']);
+  }
+  getUser(){
+    return this.user;
   }
 
 }
