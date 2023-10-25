@@ -14,6 +14,8 @@ import { AuthGuard } from './shared/login/authentication-guard';
 import { RegisterComponent } from './shared/login/register.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UserComponent } from './customer/user.component';
+import { ProductComponent } from './shared/products/product/product.component';
+import { OrderDetailsComponent } from './customer/orders/order-details/order-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { UserComponent } from './customer/user.component';
     OrdersComponent,
     LoginComponent,
     RegisterComponent,
-    UserComponent
+    UserComponent,
+    ProductComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,
